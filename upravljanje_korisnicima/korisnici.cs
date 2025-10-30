@@ -1,6 +1,9 @@
 using System;
+using System.Text.Json;
+using System.IO;
+using System.Linq;
 
-public enum Uloga
+public enum Uloge
 {
     Administrator,
     Student,
@@ -9,18 +12,35 @@ public enum Uloga
 
 public class Korisnik
 {
-    string []uloge = { "Administrator", "Student", "Profesor" };    
-    public string Ime;
-    public string Prezime;
-    public Uloga KorisnickaUloga;
+    string[] uloge = { "Administrator", "Student", "Profesor" };
 
-    public int userID;
+    private static int lastAssignedId = 0;
+    public string Ime { get; private set; }
+    public string Prezime { get; private set; }
+    public Uloge Uloga { get; private set; }
 
-    public Korisnik(string ime, string prezime, Uloga uloga)
+    public int userID { get; private set; }
+
+    public Korisnik(string ime, string prezime, Uloge uloga)
     {
         this.Ime = ime;
         this.Prezime = prezime;
-        this.KorisnickaUloga = uloga;
+        this.Uloga = uloga;
+        this.userID = ++lastAssignedId;
 
+    }
+
+    public static void InitializeLastId()
+    {
+        string korisnicka_baza = "korisnici.json";
+        if (File.Exists(korisnicka_baza))
+        {
+            string jsonString = File.ReadAllText(korisnicka_baza);
+            var korisnici = JsonSerializer.Deserialize<Korisnik[]>(jsonString);
+            if (korisnici != null && korisnici.Length > 0)
+            {
+                lastAssignedId = korisnici.Max(k => k.userID);
+            }
+        }
     }
 }
