@@ -1,2 +1,13 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using System;
+
+class program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Dobrodošli u biblioteka system!");
+        Console.WriteLine("-------------------------------");
+
+        var userManager = new upravljanje_korisnicima();
+        userManager.IspisiSve();
+    }
+}
