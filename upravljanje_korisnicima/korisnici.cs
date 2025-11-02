@@ -30,17 +30,5 @@ public class Korisnik
 
     }
 
-    public static void InitializeLastId()
-    {
-        string korisnicka_baza = "korisnici.json";
-        if (File.Exists(korisnicka_baza))
-        {
-            string jsonString = File.ReadAllText(korisnicka_baza);
-            var korisnici = JsonSerializer.Deserialize<Korisnik[]>(jsonString);
-            if (korisnici != null && korisnici.Length > 0)
-            {
-                lastAssignedId = korisnici.Max(k => k.userID);
-            }
-        }
-    }
+
 }

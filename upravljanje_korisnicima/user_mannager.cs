@@ -1,26 +1,30 @@
 using System;
-using System.Text.Json;
-using System.IO;
+using System.Collections.Generic;
 
-class upravljanje_korisnicima
+public class upravljanje_korisnicima
 {
-    private string korisnicka_baza = "korisnici.json";
-    //dodat knjige 
-
-    private List<Korisnik> korisnici;
+    public List<Korisnik> korisnici { get; private set; }
 
     public upravljanje_korisnicima()
     {
-        korisnici = Load<List<Korisnik>>(korisnicka_baza) ?? new List<Korisnik>();
-        //dodat za knjige isto
+        korisnici = new List<Korisnik>
+        {
+            new Korisnik("Omar", "Alispahic", Uloge.Administrator),
+            new Korisnik("Jane", "Smith", Uloge.Student),
+            new Korisnik("Alice", "Johnson", Uloge.Profesor)
+        };
     }
 
-    private static T? Load<T>(string path)
+    public void DodajKorisnika(Korisnik korisnik)
     {
-        if (!File.Exists(path)) return default;
-        string json = File.ReadAllText(path);
-        return JsonSerializer.Deserialize<T>(json);
+        korisnici.Add(korisnik);
+    }
+
+    public void IspisiSve()
+    {
+        foreach (var k in korisnici)
+        {
+            Console.WriteLine($"ID: {k.userID}, Ime: {k.Ime}, Prezime: {k.Prezime}, Uloga: {k.Uloga}");
+        }
     }
 }
-    
-   
