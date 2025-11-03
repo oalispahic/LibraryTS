@@ -12,3 +12,4 @@
 /Users/omaralispahic/Documents/Fax/2.Godina/3. Semestar/TS/Zadaca1/LibraryTS/obj/Debug/net9.0/LibraryTS.pdb
 /Users/omaralispahic/Documents/Fax/2.Godina/3. Semestar/TS/Zadaca1/LibraryTS/obj/Debug/net9.0/LibraryTS.genruntimeconfig.cache
 /Users/omaralispahic/Documents/Fax/2.Godina/3. Semestar/TS/Zadaca1/LibraryTS/obj/Debug/net9.0/ref/LibraryTS.dll
+/Users/omaralispahic/Documents/Fax/2.Godina/3. Semestar/TS/Zadaca1/LibraryTS/obj/Debug/net9.0/LibraryTS.sourcelink.json
