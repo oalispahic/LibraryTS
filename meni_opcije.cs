@@ -31,12 +31,22 @@ namespace LibraryTS
                     break;
 
                 case "4":
-                  //  userManager.promijeniUlogu();
+                    //  userManager.promijeniUlogu();
                     break;
 
                 default:
                     break;
             }
+        }
+
+        public void azuriranje_knjiga()
+        {
+            Console.Clear();
+            Console.Write("=====UPRAVLJANJE KNJIGAMA=====\n\n");
+            Console.Write("1. Dodaj knjigu\n");
+            Console.Write("2. Izbrisi knjigu po ID-u\n");
+            Console.Write("3. Izbrisi knjigu po Imenu\n");
+            Console.Write("5. Glavni meni\n");
         }
     }
 }
