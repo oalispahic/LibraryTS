@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/omaralispahic/Documents/Fax/2.Godina/3. Semestar/TS/Zadaca1/LibraryTS/LibraryTS.csproj",
+      "projectUniqueName": "/Users/omaralispahic/Documents/Fax/2.Godina/3. Semestar/TS/Zadaca1/Upomoc/LibraryTS/LibraryTS.csproj",
       "projectName": "LibraryTS",
-      "projectPath": "/Users/omaralispahic/Documents/Fax/2.Godina/3. Semestar/TS/Zadaca1/LibraryTS/LibraryTS.csproj",
+      "projectPath": "/Users/omaralispahic/Documents/Fax/2.Godina/3. Semestar/TS/Zadaca1/Upomoc/LibraryTS/LibraryTS.csproj",
       "packagesPath": "/Users/omaralispahic/.nuget/packages/",
-      "outputPath": "/Users/omaralispahic/Documents/Fax/2.Godina/3. Semestar/TS/Zadaca1/LibraryTS/obj/",
+      "outputPath": "/Users/omaralispahic/Documents/Fax/2.Godina/3. Semestar/TS/Zadaca1/Upomoc/LibraryTS/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/omaralispahic/.nuget/NuGet/NuGet.Config"
