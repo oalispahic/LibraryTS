@@ -145,7 +145,10 @@ using LibraryTS;
 
 public class upravljanje_korisnicima
 {
-    private const string FilePath = "users.json";
+    
+
+    private string FilePath = Path.Combine(AppContext.BaseDirectory, "users.json");
+
     public List<Korisnik> korisnici { get; private set; }
 
     private void cekanje()
