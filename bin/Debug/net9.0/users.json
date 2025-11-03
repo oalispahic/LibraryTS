@@ -1,0 +1,44 @@
+[
+  {
+    "Ime": "Omar",
+    "Prezime": "Alispahic",
+    "Uloga": 0,
+    "userID": 1
+  },
+  {
+    "Ime": "Jane",
+    "Prezime": "Smith",
+    "Uloga": 1,
+    "userID": 2
+  },
+  {
+    "Ime": "Alice",
+    "Prezime": "Johnson",
+    "Uloga": 2,
+    "userID": 3
+  },
+  {
+    "Ime": "Elma ",
+    "Prezime": "Dedi\u0107",
+    "Uloga": 2,
+    "userID": 4
+  },
+  {
+    "Ime": "Bakir",
+    "Prezime": "H",
+    "Uloga": 1,
+    "userID": 5
+  },
+  {
+    "Ime": "\u017Deljko",
+    "Prezime": "Juri\u0107",
+    "Uloga": 0,
+    "userID": 7
+  },
+  {
+    "Ime": "Meho ",
+    "Prezime": "Mehi\u0107",
+    "Uloga": 2,
+    "userID": 21
+  }
+]
