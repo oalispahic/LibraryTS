@@ -154,7 +154,7 @@ public class upravljanje_korisnicima
         Console.ReadKey();
     }
 
-    private List<Korisnik> UcitajKorisnike()
+    public List<Korisnik> UcitajKorisnike()
     {
         if (File.Exists(FilePath))
         {
@@ -176,13 +176,12 @@ public class upravljanje_korisnicima
     {
         {
             korisnici = UcitajKorisnike();
-
             if (korisnici.Count > 0)
-                Korisnik.lastAssignedId = korisnici[^1].userID;
+                Korisnik.lastAssignedId = korisnici.Max(k => k.userID);
         }
     }
 
-    private void SpasiKorisnike()
+    public void SpasiKorisnike()
     {
         string json = JsonSerializer.Serialize(
             korisnici,
@@ -220,7 +219,6 @@ public class upravljanje_korisnicima
     {
         Console.Clear();
         Console.WriteLine("=====SPISAK KORISNIKA=====\n");
-        UcitajKorisnike();
         if (korisnici.Count == 0)
         {
             Console.WriteLine("Nema registrovanih korisnika.");
@@ -247,12 +245,12 @@ public class upravljanje_korisnicima
             {
                 korisnici.Remove(korisnikZaBrisanje);
                 SpasiKorisnike();
-                Console.WriteLine("Korisnik uspješno izbrisan! /n");
+                Console.WriteLine("Korisnik uspješno izbrisan!" + "\n");
                 cekanje();
             }
             else
             {
-                Console.WriteLine("Korisnik sa unesenim ID-om nije pronađen! /n");
+                Console.WriteLine("Korisnik sa unesenim ID-om nije pronađen!" + "\n");
                 cekanje();
             }
         }
@@ -261,20 +259,20 @@ public class upravljanje_korisnicima
     public void ObrisiKorisnikaIme()
     {
         Console.Write("Unesite ime korisnika za brisanje: ");
-        var ime = Console.ReadLine();
+        var ime = Console.ReadLine()?.Trim();
         Console.Write("Unesite prezime korisnika za brisanje: ");
-        var prezime = Console.ReadLine();
+        var prezime = Console.ReadLine()?.Trim();
         var korisnikZaBrisanje = korisnici.Find(k => k.Ime == ime && k.Prezime == prezime);
         if (korisnikZaBrisanje != null)
         {
             korisnici.Remove(korisnikZaBrisanje);
             SpasiKorisnike();
-            Console.WriteLine("Korisnik uspješno izbrisan! /n");
+            Console.WriteLine("Korisnik uspješno izbrisan!"+ "\n");
             cekanje();
         }
         else
         {
-            Console.WriteLine("Korisnik sa unesenim imenom i prezimenom nije pronađen! /n");
+            Console.WriteLine("Korisnik sa unesenim imenom i prezimenom nije pronađen!"+ "\n");
             cekanje();
         }
     }
