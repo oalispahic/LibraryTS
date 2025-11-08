@@ -28,3 +28,11 @@
 /Users/omaralispahic/Documents/Fax/2.Godina/3. Semestar/TS/Zadaca1/Upomoc/LibraryTS/obj/Debug/net9.0/LibraryTS.pdb
 /Users/omaralispahic/Documents/Fax/2.Godina/3. Semestar/TS/Zadaca1/Upomoc/LibraryTS/obj/Debug/net9.0/LibraryTS.genruntimeconfig.cache
 /Users/omaralispahic/Documents/Fax/2.Godina/3. Semestar/TS/Zadaca1/Upomoc/LibraryTS/obj/Debug/net9.0/ref/LibraryTS.dll
+/Users/bakirhadzialic/Documents/TS_Z1/LibraryTS/obj/Debug/net9.0/LibraryTS.GeneratedMSBuildEditorConfig.editorconfig
+/Users/bakirhadzialic/Documents/TS_Z1/LibraryTS/obj/Debug/net9.0/LibraryTS.AssemblyInfoInputs.cache
+/Users/bakirhadzialic/Documents/TS_Z1/LibraryTS/obj/Debug/net9.0/LibraryTS.AssemblyInfo.cs
+/Users/bakirhadzialic/Documents/TS_Z1/LibraryTS/obj/Debug/net9.0/LibraryTS.csproj.CoreCompileInputs.cache
+/Users/bakirhadzialic/Documents/TS_Z1/LibraryTS/obj/Debug/net9.0/LibraryTS.sourcelink.json
+/Users/bakirhadzialic/Documents/TS_Z1/LibraryTS/obj/Debug/net9.0/LibraryTS.dll
+/Users/bakirhadzialic/Documents/TS_Z1/LibraryTS/obj/Debug/net9.0/refint/LibraryTS.dll
+/Users/bakirhadzialic/Documents/TS_Z1/LibraryTS/obj/Debug/net9.0/LibraryTS.pdb
