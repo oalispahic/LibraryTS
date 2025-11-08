@@ -1,13 +1,9 @@
-<<<<<<< Updated upstream
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
-=======
-﻿using System;
+using System;
 using LibraryTS;
 
 namespace LibraryTS
 {
-    class program
+    class Program
     {
         static void Main(string[] args)
         {
@@ -33,7 +29,7 @@ namespace LibraryTS
                 Console.WriteLine("=====GLAVNI MENI=====\n");
                 Console.WriteLine("1. Ažuriranje korisnika");
                 Console.WriteLine("2. Izlistaj sve korisnike");
-                Console.WriteLine("3. Ažuriranje knjiga"); 
+                Console.WriteLine("3. Ažuriranje knjiga");
                 Console.WriteLine("4. Izlistaj sve knjige");
                 Console.WriteLine("9. Izlaz");
                 Console.Write("Izaberite opciju: ");
@@ -49,7 +45,7 @@ namespace LibraryTS
                         userManager.IspisiSve();
                         break;
                     case "3":
-                        meni.azuriranje_knjiga(); 
+                        meni.azuriranje_knjiga();
                         break;
                     case "4":
                         bookManager.IspisiSve();
@@ -66,4 +62,3 @@ namespace LibraryTS
         }
     }
 }
->>>>>>> Stashed changes
