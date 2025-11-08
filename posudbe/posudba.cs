@@ -51,7 +51,7 @@ public class sistemposudbe
 
         public void ReturnBook(int userId, int bookId)
         {
-            var loan = loans.FirstOrDefault(l => l.UserId == userId && l.BookId == bookId && !l.IsReturned);
+            var loan = loans.FirstOrDefault(l => l.userId == userId && l.BookId == bookId && !l.IsReturned);
             if (loan == null)
             {
                 Console.WriteLine("Nema aktivne posudbe za ovu knjigu.");
@@ -83,7 +83,7 @@ public class sistemposudbe
 
         public void ShowUserHistory(int userId)
         {
-            var userLoans = loans.Where(l => l.UserId == userId).ToList();
+            var userLoans = loans.Where(l => l.userId == userId).ToList();
             if (userLoans.Count == 0)
             {
                 Console.WriteLine("Nema posudbi za ovog korisnika.");

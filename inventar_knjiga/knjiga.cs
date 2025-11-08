@@ -1,4 +1,7 @@
 using System;
+using System.IO;
+using System.Linq;
+using System.Text.Json;
 using System.Text.Json.Serialization;
 
 public enum Zanr
@@ -12,10 +15,12 @@ public enum Zanr
 
 public class Knjiga
 {
+    string[] zanrovi = {"Roman", "Nauka", "Historija", "Fantastika", "Drugi"};
+
     public static int lastAssignedId = 0;
 
     [JsonInclude]
-    public int ID { get; private set; }
+    public int bookID { get; private set; }
 
     [JsonInclude]
     public string Naslov { get; set; }
@@ -31,7 +36,7 @@ public class Knjiga
 
     public Knjiga(string naslov, string autor, Zanr zanr, bool dostupna = true)
     {
-        this.ID = ++lastAssignedId;
+        this.bookID = ++lastAssignedId;
         this.Naslov = naslov;
         this.Autor = autor;
         this.Zanr = zanr;

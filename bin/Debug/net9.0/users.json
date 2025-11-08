@@ -34,5 +34,11 @@
     "Prezime": "Juri\u0107",
     "Uloga": 0,
     "userID": 8
+  },
+  {
+    "Ime": "Bakir",
+    "Prezime": "Hadz",
+    "Uloga": 1,
+    "userID": 9
   }
 ]

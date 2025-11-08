@@ -36,3 +36,10 @@
 /Users/bakirhadzialic/Documents/TS_Z1/LibraryTS/obj/Debug/net9.0/LibraryTS.dll
 /Users/bakirhadzialic/Documents/TS_Z1/LibraryTS/obj/Debug/net9.0/refint/LibraryTS.dll
 /Users/bakirhadzialic/Documents/TS_Z1/LibraryTS/obj/Debug/net9.0/LibraryTS.pdb
+/Users/bakirhadzialic/Documents/TS_Z1/LibraryTS/bin/Debug/net9.0/LibraryTS
+/Users/bakirhadzialic/Documents/TS_Z1/LibraryTS/bin/Debug/net9.0/LibraryTS.deps.json
+/Users/bakirhadzialic/Documents/TS_Z1/LibraryTS/bin/Debug/net9.0/LibraryTS.runtimeconfig.json
+/Users/bakirhadzialic/Documents/TS_Z1/LibraryTS/bin/Debug/net9.0/LibraryTS.dll
+/Users/bakirhadzialic/Documents/TS_Z1/LibraryTS/bin/Debug/net9.0/LibraryTS.pdb
+/Users/bakirhadzialic/Documents/TS_Z1/LibraryTS/obj/Debug/net9.0/LibraryTS.genruntimeconfig.cache
+/Users/bakirhadzialic/Documents/TS_Z1/LibraryTS/obj/Debug/net9.0/ref/LibraryTS.dll

@@ -3,7 +3,7 @@ namespace LibraryTS
     public class MeniOpcije
     {
         public upravljanje_korisnicima userManager;
-        public UpravljanjeKnjigama bookManager;
+        public upravljanje_knjigama bookManager;
 
         public void azuriranje_korisnika()
         {
@@ -48,12 +48,11 @@ namespace LibraryTS
             Console.WriteLine("2. Izbriši knjigu po ID-u");
             Console.WriteLine("3. Izbriši knjigu po naslovu");
             Console.WriteLine("4. Ažuriraj knjigu");
-            Console.WriteLine("5. Prikaži sve knjige");
-            Console.WriteLine("6. Pretraga po naslovu");
-            Console.WriteLine("7. Pretraga po autoru");
-            Console.WriteLine("8. Pretraga po žanru");
-            Console.WriteLine("9. Promijeni dostupnost (izdaj/vrati)");
-            Console.WriteLine("0. Povratak u glavni meni");
+            Console.WriteLine("5. Pretraga po naslovu");
+            Console.WriteLine("6. Pretraga po autoru");
+            Console.WriteLine("7. Pretraga po žanru");
+            Console.WriteLine("8. Promijeni dostupnost (izdaj/vrati)");
+            Console.WriteLine("9. Povratak u glavni meni");
             Console.Write("\nIzbor: ");
             var input = Console.ReadLine();
 
@@ -72,18 +71,15 @@ namespace LibraryTS
                     bookManager.AzurirajKnjigu();
                     break;
                 case "5":
-                    bookManager.IspisiSve();
-                    break;
-                case "6":
                     bookManager.PretragaPoNaslovu();
                     break;
-                case "7":
+                case "6":
                     bookManager.PretragaPoAutoru();
                     break;
-                case "8":
+                case "7":
                     bookManager.PretragaPoZanru();
                     break;
-                case "9":
+                case "8":
                     bookManager.PromijeniDostupnost();
                     break;
                 default:

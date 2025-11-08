@@ -9,7 +9,7 @@ namespace LibraryTS
         {
             var meni = new MeniOpcije();
             var userManager = new upravljanje_korisnicima();
-            var bookManager = new UpravljanjeKnjigama();
+            var bookManager = new upravljanje_knjigama();
 
             meni.userManager = userManager;
             meni.bookManager = bookManager;

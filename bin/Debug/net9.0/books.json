@@ -1,0 +1,44 @@
+[
+  {
+    "bookID": 3,
+    "Naslov": "1985",
+    "Autor": "George Orwell",
+    "Zanr": 4,
+    "Dostupna": false
+  },
+  {
+    "bookID": 4,
+    "Naslov": "The Catcher in the Rye",
+    "Autor": "J.D. Salinger",
+    "Zanr": 0,
+    "Dostupna": true
+  },
+  {
+    "bookID": 5,
+    "Naslov": "The Great Gatsby",
+    "Autor": "F. Scott Fitzgerald",
+    "Zanr": 0,
+    "Dostupna": false
+  },
+  {
+    "bookID": 6,
+    "Naslov": "A Brief History of Time",
+    "Autor": "Stephen Hawking",
+    "Zanr": 1,
+    "Dostupna": true
+  },
+  {
+    "bookID": 7,
+    "Naslov": "The Lord of the Rings: The Fellowship of the Ring",
+    "Autor": "J.R.R. Tolkien",
+    "Zanr": 3,
+    "Dostupna": true
+  },
+  {
+    "bookID": 8,
+    "Naslov": "The Diary of a Young Girl",
+    "Autor": "Anne Frank",
+    "Zanr": 2,
+    "Dostupna": true
+  }
+]
