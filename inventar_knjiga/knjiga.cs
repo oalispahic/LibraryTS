@@ -18,10 +18,10 @@ public class Knjiga
     public int ID { get; private set; }
 
     [JsonInclude]
-    public string Naslov { get; private set; }
+    public string Naslov { get; set; }
 
     [JsonInclude]
-    public string Autor { get; private set; }
+    public string Autor { get; set; }
 
     [JsonInclude]
     public Zanr Zanr { get; set; }

@@ -53,7 +53,7 @@ public class UpravljanjeKnjigama
         var naslov = Console.ReadLine()?.Trim();
         Console.Write("Unesite autora: ");
         var autor = Console.ReadLine()?.Trim();
-        Console.Write("Unesite zanr (Roman, Nauka, Historija, Fantastika, Drugi): ");
+        Console.Write("Unesite žanr (Roman, Nauka, Historija, Fantastika, Drugi): ");
         var zanrInput = Console.ReadLine()?.Trim();
 
         if (Enum.TryParse<Zanr>(zanrInput, out var zanr))
@@ -61,11 +61,11 @@ public class UpravljanjeKnjigama
             var knjiga = new Knjiga(naslov, autor, zanr);
             Knjige.Add(knjiga);
             SpasiKnjige();
-            Console.WriteLine("Knjiga uspjesno dodana!");
+            Console.WriteLine("Knjiga uspješno dodana!");
         }
         else
         {
-            Console.WriteLine("Neispravan zanr!");
+            Console.WriteLine("Neispravan žanr!");
         }
         Cekanje();
     }
@@ -80,15 +80,37 @@ public class UpravljanjeKnjigama
             {
                 Knjige.Remove(knjiga);
                 SpasiKnjige();
-                Console.WriteLine("Knjiga uspjesno izbrisana!");
+                Console.WriteLine("Knjiga uspješno izbrisana!");
             }
             else
             {
-                Console.WriteLine("Knjiga sa tim ID-om nije pronadjena!");
+                Console.WriteLine("Knjiga sa tim ID-om nije pronađena!");
             }
         }
         Cekanje();
     }
+
+    public void ObrisiKnjiguNaslov()
+{
+    Console.Write("Unesite naslov knjige za brisanje: ");
+    var naslov = Console.ReadLine()?.Trim();
+    var knjiga = Knjige.Find(k => 
+        k.Naslov != null && 
+        k.Naslov.Equals(naslov, StringComparison.OrdinalIgnoreCase));
+
+    if (knjiga != null)
+    {
+        Knjige.Remove(knjiga);
+        SpasiKnjige();
+        Console.WriteLine("Knjiga uspješno izbrisana!");
+    }
+    else
+    {
+        Console.WriteLine("Knjiga sa tim naslovom nije pronađena!");
+    }
+    Cekanje();
+}
+
 
     public void IspisiSve()
     {
@@ -103,7 +125,7 @@ public class UpravljanjeKnjigama
 
         foreach (var k in Knjige)
         {
-            Console.WriteLine($"ID: {k.ID}, Naslov: {k.Naslov}, Autor: {k.Autor}, Zanr: {k.Zanr}, Dostupna: {k.Dostupna}");
+            Console.WriteLine($"ID: {k.ID}, Naslov: {k.Naslov}, Autor: {k.Autor}, Žanr: {k.Zanr}, Dostupna: {k.Dostupna}");
         }
         Cekanje();
     }
@@ -126,7 +148,7 @@ public class UpravljanjeKnjigama
 
     public void PretragaPoZanru()
     {
-        Console.Write("Unesite zanr za pretragu: ");
+        Console.Write("Unesite žanr za pretragu: ");
         var query = Console.ReadLine()?.Trim();
         if (Enum.TryParse<Zanr>(query, out var zanr))
         {
@@ -135,7 +157,7 @@ public class UpravljanjeKnjigama
         }
         else
         {
-            Console.WriteLine("Neispravan zanr!");
+            Console.WriteLine("Neispravan žanr!");
             Cekanje();
         }
     }
@@ -150,9 +172,76 @@ public class UpravljanjeKnjigama
         {
             foreach (var k in results)
             {
-                Console.WriteLine($"ID: {k.ID}, Naslov: {k.Naslov}, Autor: {k.Autor}, Zanr: {k.Zanr}, Dostupna: {k.Dostupna}");
+                Console.WriteLine($"ID: {k.ID}, Naslov: {k.Naslov}, Autor: {k.Autor}, Žanr: {k.Zanr}, Dostupna: {k.Dostupna}");
             }
         }
         Cekanje();
     }
+
+    public void AzurirajKnjigu()
+{
+    Console.Write("Unesite ID knjige koju želite ažurirati: ");
+    if (int.TryParse(Console.ReadLine(), out int id))
+    {
+        var knjiga = Knjige.Find(k => k.ID == id);
+        if (knjiga == null)
+        {
+            Console.WriteLine("Knjiga nije pronađena!");
+            Cekanje();
+            return;
+        }
+
+        Console.WriteLine($"Trenutni naslov: {knjiga.Naslov}");
+        Console.Write("Novi naslov (Enter za preskok): ");
+        var noviNaslov = Console.ReadLine()?.Trim();
+        if (!string.IsNullOrEmpty(noviNaslov))
+            knjiga.GetType().GetProperty("Naslov")?.SetValue(knjiga, noviNaslov);
+
+        Console.WriteLine($"Trenutni autor: {knjiga.Autor}");
+        Console.Write("Novi autor (Enter za preskok): ");
+        var noviAutor = Console.ReadLine()?.Trim();
+        if (!string.IsNullOrEmpty(noviAutor))
+            knjiga.GetType().GetProperty("Autor")?.SetValue(knjiga, noviAutor);
+
+        Console.WriteLine($"Trenutni žanr: {knjiga.Zanr}");
+        Console.Write("Novi žanr (Enter za preskok): ");
+        var noviZanrInput = Console.ReadLine()?.Trim();
+        if (!string.IsNullOrEmpty(noviZanrInput) && Enum.TryParse<Zanr>(noviZanrInput, out var noviZanr))
+            knjiga.Zanr = noviZanr;
+
+        SpasiKnjige();
+        Console.WriteLine("Knjiga uspješno ažurirana!");
+    }
+    else
+    {
+        Console.WriteLine("Neispravan ID!");
+    }
+    Cekanje();
+}
+
+public void PromijeniDostupnost()
+{
+    Console.Write("Unesite ID knjige: ");
+    if (int.TryParse(Console.ReadLine(), out int id))
+    {
+        var knjiga = Knjige.Find(k => k.ID == id);
+        if (knjiga == null)
+        {
+            Console.WriteLine("Knjiga nije pronađena!");
+            Cekanje();
+            return;
+        }
+
+        knjiga.Dostupna = !knjiga.Dostupna;
+        SpasiKnjige();
+        Console.WriteLine(knjiga.Dostupna
+            ? $"Knjiga '{knjiga.Naslov}' je sada dostupna."
+            : $"Knjiga '{knjiga.Naslov}' je označena kao izdata.");
+    }
+    else
+    {
+        Console.WriteLine("Neispravan ID!");
+    }
+    Cekanje();
+}
 }

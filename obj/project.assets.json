@@ -8,19 +8,27 @@
     "net9.0": []
   },
   "packageFolders": {
-    "/Users/omaralispahic/.nuget/packages/": {}
+    "/Users/bakirhadzialic/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< Updated upstream
       "projectUniqueName": "/Users/omaralispahic/Documents/Fax/2.Godina/3. Semestar/TS/Zadaca1/LibraryTS/LibraryTS.csproj",
       "projectName": "LibraryTS",
       "projectPath": "/Users/omaralispahic/Documents/Fax/2.Godina/3. Semestar/TS/Zadaca1/LibraryTS/LibraryTS.csproj",
       "packagesPath": "/Users/omaralispahic/.nuget/packages/",
       "outputPath": "/Users/omaralispahic/Documents/Fax/2.Godina/3. Semestar/TS/Zadaca1/LibraryTS/obj/",
+=======
+      "projectUniqueName": "/Users/bakirhadzialic/Documents/TS_Z1/LibraryTS/LibraryTS.csproj",
+      "projectName": "LibraryTS",
+      "projectPath": "/Users/bakirhadzialic/Documents/TS_Z1/LibraryTS/LibraryTS.csproj",
+      "packagesPath": "/Users/bakirhadzialic/.nuget/packages/",
+      "outputPath": "/Users/bakirhadzialic/Documents/TS_Z1/LibraryTS/obj/",
+>>>>>>> Stashed changes
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/omaralispahic/.nuget/NuGet/NuGet.Config"
+        "/Users/bakirhadzialic/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net9.0"
