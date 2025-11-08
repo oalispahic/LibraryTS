@@ -3,6 +3,7 @@ namespace LibraryTS
     public class MeniOpcije
     {
         public upravljanje_korisnicima userManager;
+        public UpravljanjeKnjigama bookManager;
 
         public void azuriranje_korisnika()
         {
@@ -42,11 +43,52 @@ namespace LibraryTS
         public void azuriranje_knjiga()
         {
             Console.Clear();
-            Console.Write("=====UPRAVLJANJE KNJIGAMA=====\n\n");
-            Console.Write("1. Dodaj knjigu\n");
-            Console.Write("2. Izbrisi knjigu po ID-u\n");
-            Console.Write("3. Izbrisi knjigu po Imenu\n");
-            Console.Write("5. Glavni meni\n");
+            Console.WriteLine("=====UPRAVLJANJE KNJIGAMA=====\n");
+            Console.WriteLine("1. Dodaj knjigu");
+            Console.WriteLine("2. Izbriši knjigu po ID-u");
+            Console.WriteLine("3. Izbriši knjigu po naslovu");
+            Console.WriteLine("4. Ažuriraj knjigu");
+            Console.WriteLine("5. Prikaži sve knjige");
+            Console.WriteLine("6. Pretraga po naslovu");
+            Console.WriteLine("7. Pretraga po autoru");
+            Console.WriteLine("8. Pretraga po žanru");
+            Console.WriteLine("9. Promijeni dostupnost (izdaj/vrati)");
+            Console.WriteLine("0. Povratak u glavni meni");
+            Console.Write("\nIzbor: ");
+            var input = Console.ReadLine();
+
+            switch (input)
+            {
+                case "1":
+                    bookManager.DodajKnjigu();
+                    break;
+                case "2":
+                    bookManager.ObrisiKnjiguID();
+                    break;
+                case "3":
+                    bookManager.ObrisiKnjiguNaslov();
+                    break;
+                case "4":
+                    bookManager.AzurirajKnjigu();
+                    break;
+                case "5":
+                    bookManager.IspisiSve();
+                    break;
+                case "6":
+                    bookManager.PretragaPoNaslovu();
+                    break;
+                case "7":
+                    bookManager.PretragaPoAutoru();
+                    break;
+                case "8":
+                    bookManager.PretragaPoZanru();
+                    break;
+                case "9":
+                    bookManager.PromijeniDostupnost();
+                    break;
+                default:
+                    break;
+             }
         }
     }
 }
