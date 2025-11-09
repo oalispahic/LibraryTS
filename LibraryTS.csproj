@@ -7,9 +7,11 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <!-- Add this ItemGroup to copy your JSON file to the output folder -->
   <ItemGroup>
     <None Update="users.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="loans.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>

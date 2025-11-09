@@ -24,12 +24,6 @@
     "userID": 4
   },
   {
-    "Ime": "Bakir",
-    "Prezime": "H",
-    "Uloga": 1,
-    "userID": 5
-  },
-  {
     "Ime": "\u017Deljko",
     "Prezime": "Juri\u0107",
     "Uloga": 0,
@@ -40,5 +34,11 @@
     "Prezime": "Hadz",
     "Uloga": 1,
     "userID": 9
+  },
+  {
+    "Ime": "Ibrahim",
+    "Prezime": "Alispahi\u0107",
+    "Uloga": 2,
+    "userID": 10
   }
 ]

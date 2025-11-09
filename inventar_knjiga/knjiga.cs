@@ -10,7 +10,7 @@ public enum Zanr
     Nauka,
     Historija,
     Fantastika,
-    Drugi
+    Drugi,
 }
 
 public class Knjiga

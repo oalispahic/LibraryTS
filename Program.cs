@@ -10,6 +10,7 @@ namespace LibraryTS
             var meni = new MeniOpcije();
             var userManager = new upravljanje_korisnicima();
             var bookManager = new upravljanje_knjigama();
+           
 
             meni.userManager = userManager;
             meni.bookManager = bookManager;
@@ -49,6 +50,9 @@ namespace LibraryTS
                         break;
                     case "4":
                         bookManager.IspisiSve();
+                        break;
+                    case "5":
+                        meni.Najam();
                         break;
                     case "9":
                         Console.WriteLine("Izlaz iz programa. Doviđenja!");

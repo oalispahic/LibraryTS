@@ -1,9 +1,20 @@
+using System;
+
+
+
 namespace LibraryTS
 {
     public class MeniOpcije
     {
         public upravljanje_korisnicima userManager;
         public upravljanje_knjigama bookManager;
+
+        public upravlja
+
+
+       
+    
+        
 
         public void azuriranje_korisnika()
         {
@@ -32,7 +43,7 @@ namespace LibraryTS
                     break;
 
                 case "4":
-                    //  userManager.promijeniUlogu();
+                    //userManager.promijeniUlogu();
                     break;
 
                 default:
@@ -84,7 +95,30 @@ namespace LibraryTS
                     break;
                 default:
                     break;
-             }
+            }
+        }
+
+        public void Najam()
+        {
+            Console.Clear();
+            Console.WriteLine("=====NAJAM KNJIGA=====\n");
+            Console.WriteLine("1. Izdaj knjigu");
+            Console.WriteLine("2. Vrati knjigu");
+            Console.WriteLine("3. Glavni meni\n");
+            Console.Write("Izbor: ");
+            var input = Console.ReadLine();
+
+            switch (input)
+            {
+                case "1":
+                    loanManager.posudi();
+                    break;
+                case "2":
+                    // loanManager.vrati();
+                    break;
+                default:
+                    break;
+            }
         }
     }
 }
