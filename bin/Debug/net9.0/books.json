@@ -40,5 +40,12 @@
     "Autor": "Anne Frank",
     "Zanr": 2,
     "Dostupna": true
+  },
+  {
+    "bookID": 9,
+    "Naslov": "Testna Knjiga",
+    "Autor": "Omar",
+    "Zanr": 0,
+    "Dostupna": true
   }
 ]

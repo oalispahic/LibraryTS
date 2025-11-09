@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/bakirhadzialic/Documents/TS_Z1/LibraryTS/LibraryTS.csproj": {}
+    "/Users/omaralispahic/Documents/Fax/2.Godina/3. Semestar/TS/Zadaca1/Upomoc/LibraryTS/LibraryTS.csproj": {}
   },
   "projects": {
-    "/Users/bakirhadzialic/Documents/TS_Z1/LibraryTS/LibraryTS.csproj": {
+    "/Users/omaralispahic/Documents/Fax/2.Godina/3. Semestar/TS/Zadaca1/Upomoc/LibraryTS/LibraryTS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/bakirhadzialic/Documents/TS_Z1/LibraryTS/LibraryTS.csproj",
+        "projectUniqueName": "/Users/omaralispahic/Documents/Fax/2.Godina/3. Semestar/TS/Zadaca1/Upomoc/LibraryTS/LibraryTS.csproj",
         "projectName": "LibraryTS",
-        "projectPath": "/Users/bakirhadzialic/Documents/TS_Z1/LibraryTS/LibraryTS.csproj",
-        "packagesPath": "/Users/bakirhadzialic/.nuget/packages/",
-        "outputPath": "/Users/bakirhadzialic/Documents/TS_Z1/LibraryTS/obj/",
+        "projectPath": "/Users/omaralispahic/Documents/Fax/2.Godina/3. Semestar/TS/Zadaca1/Upomoc/LibraryTS/LibraryTS.csproj",
+        "packagesPath": "/Users/omaralispahic/.nuget/packages/",
+        "outputPath": "/Users/omaralispahic/Documents/Fax/2.Godina/3. Semestar/TS/Zadaca1/Upomoc/LibraryTS/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/bakirhadzialic/.nuget/NuGet/NuGet.Config"
+          "/Users/omaralispahic/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
