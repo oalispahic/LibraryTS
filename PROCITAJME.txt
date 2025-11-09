@@ -1,0 +1,25 @@
+				-------------------------UPUTE PRI RADU--------------------
+
+Pazljivo procitati prije rada i slijediti upute!!!!!!
+
+1. Prvo kreirate directory gdje zelite na vasem racunaru     'mkdir "ime directory-a'
+
+2. cd do directory-a i uraditi 'git init' a zatim 'git pull https://github.com/oalispahic/LibraryTS'
+
+3. Kreirati svoj branch za modul koji smo dogovorili koristeci 'git branch -b "ime_modula_VX" pri cemu je X verzija
+
+4. Uraditi test da radi sve tako sto cete kreirati bilo kakav file (txt npr) i onda ga commit i push
+
+
+
+						UPUTE ZA PRAVILAN RAD:
+
+1. Svoj modul raditi na svom branchu fino rasporedjen u foldere, dakle modul folder gdje se nalaze .cs file-ovi
+
+2. Kada se zavrsi bilo kakav rad za jednu sesiju obavezno uraditi commit i push na taj branch.
+
+3. Nakon sto se uradi dovoljno radi se pull request i merge sa 'test_app' branchom gdje ce se moci testirati aplikacija
+
+4. Nakon svakog pull request i merge-a sa test branchom, kreirati novi branch svog modula ali pod novom verzijom.
+
+5. Nastaviti ovo raditi dok se ne zavrsi sve ! 
