@@ -10,10 +10,13 @@ namespace LibraryTS
             var meni = new MeniOpcije();
             var userManager = new upravljanje_korisnicima();
             var bookManager = new upravljanje_knjigama();
-           
+            var loanManager = new upravljanje_posudbama(userManager, bookManager);
+
 
             meni.userManager = userManager;
             meni.bookManager = bookManager;
+            meni.loanManager = loanManager;
+ 
 
             Console.Clear();
             var izbor = "0";
@@ -32,6 +35,7 @@ namespace LibraryTS
                 Console.WriteLine("2. Izlistaj sve korisnike");
                 Console.WriteLine("3. Ažuriranje knjiga");
                 Console.WriteLine("4. Izlistaj sve knjige");
+                Console.WriteLine("5. Iznajmljivanje knjiga");
                 Console.WriteLine("9. Izlaz");
                 Console.Write("Izaberite opciju: ");
                 prvi_ispis = false;

@@ -1,7 +1,5 @@
 using System;
 
-
-
 namespace LibraryTS
 {
     public class MeniOpcije
@@ -9,12 +7,9 @@ namespace LibraryTS
         public upravljanje_korisnicima userManager;
         public upravljanje_knjigama bookManager;
 
-        public upravlja
-
-
-       
-    
+        public upravljanje_posudbama loanManager;
         
+
 
         public void azuriranje_korisnika()
         {

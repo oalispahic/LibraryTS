@@ -11,7 +11,7 @@
     "Naslov": "The Catcher in the Rye",
     "Autor": "J.D. Salinger",
     "Zanr": 0,
-    "Dostupna": true
+    "Dostupna": false
   },
   {
     "bookID": 5,

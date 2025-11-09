@@ -13,14 +13,23 @@ public class posudba
     public int posudbaID { get; set; }
 
     [JsonInclude]
-    int bookID { get; set; }
+    public int bookID { get; set; }
 
     [JsonInclude]
-    int userID { get; set; }
+    public int userID { get; set; }
 
     [JsonInclude]
     public DateTime datumPosudbe { get; set; }
 
     [JsonInclude]
     public DateTime datumVracanja { get; set; }
+
+    public posudba()
+    {
+        this.posudbaID = ++lastAssignedId;
+        this.bookID = bookID;
+        this.userID = userID;
+        this.datumPosudbe = datumPosudbe;
+        this.datumVracanja = datumVracanja;
+    }
 }
