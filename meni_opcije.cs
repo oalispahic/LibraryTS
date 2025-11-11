@@ -8,6 +8,8 @@ namespace LibraryTS
         public upravljanje_knjigama bookManager;
 
         public upravljanje_posudbama loanManager;
+
+        
         
 
 
@@ -99,7 +101,8 @@ namespace LibraryTS
             Console.WriteLine("=====NAJAM KNJIGA=====\n");
             Console.WriteLine("1. Izdaj knjigu");
             Console.WriteLine("2. Vrati knjigu");
-            Console.WriteLine("3. Glavni meni\n");
+            Console.WriteLine("3. Izvještaj o posudbama");
+            Console.WriteLine("Enter za glavni meni n");
             Console.Write("Izbor: ");
             var input = Console.ReadLine();
 
@@ -109,7 +112,10 @@ namespace LibraryTS
                     loanManager.posudi();
                     break;
                 case "2":
-                    // loanManager.vrati();
+                    loanManager.vrati();
+                    break;
+                case "3":
+                    loanManager.izvjestaj_posudbi();
                     break;
                 default:
                     break;
