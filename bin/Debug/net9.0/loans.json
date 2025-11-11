@@ -1,9 +1,9 @@
 [
   {
-    "posudbaID": 2,
-    "bookID": 4,
+    "posudbaID": 6,
+    "bookID": 9,
     "userID": 1,
-    "datumPosudbe": "2025-11-09T21:32:58.031529+01:00",
-    "datumVracanja": "2025-11-23T21:32:58.051301+01:00"
+    "datumPosudbe": "2025-11-11T17:34:55.104399+01:00",
+    "datumVracanja": "2025-11-25T17:34:55.104404+01:00"
   }
 ]
